@@ -1,0 +1,16 @@
+usdtocop:
+  from: usd
+  to: euro
+  twitter-consumer_key: YOUR_CONSUMER_KEY
+  twitter-consumer-secret: YOUR_CONSUMER_SECRET
+  twitter-oauth-token: YOUR_OAUTH_TOKEN
+  twitter-oauth-token-secret: YOUR_SECRET
+
+usdtoeuro:
+  from: usd
+  to: euro
+  twitter-consumer_key: YOUR_CONSUMER_KEY
+  twitter-consumer-secret: YOUR_CONSUMER_SECRET
+  twitter-oauth-token: YOUR_OAUTH_TOKEN
+  twitter-oauth-token-secret: YOUR_SECRET
+

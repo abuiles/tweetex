@@ -1,0 +1,24 @@
+#!/usr/bin/env ruby
+
+require File.dirname(__FILE__) + '/../lib/tweetex'
+require "yaml"
+
+config = YAML.load_file(File.dirname(__FILE__) + '/../config/config.yaml')
+
+config.each_value do |info|
+  consumer_key       = info["twitter-consumer_key"]
+  consumer_secret    = info["twitter-consumer_secret"]
+  oauth_token        = info["twitter-oauth-token"]
+  oauth_token_secret = info["twitter-oauth-token-secret"]
+  from               = info["from"]
+  to                 = info["to"]
+
+  tweeter = Tweetex::TweetExchange.new(from, to, consumer_key, consumer_secret, oauth_token, oauth_token_secret)
+  puts 'Posting #{from} to #{to}'
+  tweeter.post
+end
+
+
+
+
+
