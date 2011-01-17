@@ -11,10 +11,10 @@ Follow @usdtocop.
 == USAGE
 
    1. Grab the source from github: git clone git://github.com/abuiles/tweetex.git
-   1. Install the gem dependencies with: bundle install.
-   1. Setup the currencies you want to tweet about and the twitter credentials for the account in config/config.yaml.
-   1. Setup the schedule for your tweets in config/schedule.rb (you can find more information in https://github.com/javan/whenever).
-   1. You are almost done, write the schedule to your crontab with: whenever -w.
+   2. Install the gem dependencies with: bundle install.
+   3. Setup the currencies you want to tweet about and the twitter credentials for the account in config/config.yaml.
+   4. Setup the schedule for your tweets in config/schedule.rb (you can find more information in https://github.com/javan/whenever).
+   5. You are almost done, write the schedule to your crontab with: whenever -w.
 
 == LICENSE:
 
