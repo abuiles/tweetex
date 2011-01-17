@@ -8,7 +8,7 @@ module Tweetex
   class TweetExchange
     def initialize(from, to, consumer_key, consumer_secret, oauth_token, oauth_token_secret)
       ['from', 'to', 'consumer_key', 'consumer_secret', 'oauth_token', 'oauth_token_secret'].each do |var|
-        instance_variable_set(:"@#{var}", (eval var))
+        instance_variable_set(:"@#{var}", eval var)
       end
     end
 
