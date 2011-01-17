@@ -18,7 +18,7 @@ module Tweetex
       exchange = grab_exchange_rate
       if exchange
         twitter  = set_twitter_connection
-        message = "#{Time.now.strftime("%m/%d/%Y at %I:%M%p")}: exchange rate  from #{@from} to #{@to} is: #{exchange}"
+        message = "#{Time.now.strftime("%m/%d/%Y")}: exchange rate  from #{@from} to #{@to} is: #{exchange}"
         client = Twitter::Client.new
         client.update(message)
       end
