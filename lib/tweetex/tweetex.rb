@@ -1,4 +1,3 @@
-require 'rubygems'
 require 'twitter'
 require 'net/http'
 require 'uri'

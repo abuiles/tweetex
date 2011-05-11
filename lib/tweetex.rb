@@ -1,1 +1,1 @@
-require File.dirname(__FILE__) + '/tweetex/tweetex'
+require 'tweetex/tweetex'

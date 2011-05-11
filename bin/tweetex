@@ -1,6 +1,8 @@
 #!/usr/bin/env ruby
 
-require File.dirname(__FILE__) + '/../lib/tweetex'
+$LOAD_PATH.unshift('lib')
+
+require 'tweetex'
 require "yaml"
 
 config = YAML.load_file(File.dirname(__FILE__) + '/../config/config.yaml')
